@@ -1,3 +1,0 @@
-# Scrims
-
-Hello World!
