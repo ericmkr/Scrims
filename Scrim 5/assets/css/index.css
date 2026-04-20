@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #212527;
+    color: #9FB2B9;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    margin: 2em auto 0;
+}
+
+.card {
+    background: #2C3031;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    padding: 1.5em;                             /* Solves the issue of the card being too small and the text being cramped. Replaces most of the margin and padding used in other selectors. */
+}
+
+p, h3 {
+    margin: 0;
+}
+
+h3 {
+    margin-left: 1em;
+    margin-top: .5em;
+    color: #B6EAFF;
+}
+
+span {
+    width: 5em;
+    height: 5em;
+    background: #75A2B8;
+    border-radius: 50%;
+    margin-left: 1em;
+}
+
+/* 
+
+   Your fixes below:
+   
+   My solution included using the following properties:  
+   width, background, padding, margin,
+   text-transform, font-size, letter-spacing & color
+   
+*/
+
+.container {
+    /* margin: 0; */
+    width: 90%;
+}
+
+.card {
+    margin: 1.5em;
+    margin-bottom: .5em;
+    padding: .5em;
+}
+
+p.date {
+    text-align: right;
+    margin-right: 1em;
+    margin-top: .5em;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #7A8587;
+}
+
+h3 {
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.desc{
+    margin-bottom: 1em;
+    margin-top: .5em;
+    font-size: 1.1em;
+    margin-right: 1em;
+    line-height: 1.3em;
+}
